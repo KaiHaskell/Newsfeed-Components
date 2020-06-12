@@ -6,7 +6,7 @@ let menuItems = [
   "What's New",
   "Tech Trends",
   "Music",
-  "Log Out"
+  "Log Out",
 ];
 
 /* 
@@ -40,7 +40,7 @@ function navMenu(array) {
   const menuUl = document.createElement("ul");
   const menuButton = document.querySelector(".menu-button");
 
-  array.forEach(items => {
+  array.forEach((items) => {
     const menuLi = document.createElement("li");
     menuLi.textContent = items;
     menuUl.appendChild(menuLi);
@@ -59,8 +59,6 @@ function navMenu(array) {
 
   return menuDiv;
 }
-
-let menu1 = navMenu(menuItems);
 
 let header = document.querySelector(".header");
 header.appendChild(navMenu(menuItems));
